@@ -1,0 +1,50 @@
+•	EJERCICIO 1: Cree un bucle For de Python.
+
+persona = 'Sara'
+lista_nombres = 'Jessica', 'Paul', 'George', 'Henry', 'Adán'
+
+for nombre in lista_nombres:
+    if nombre == persona:
+        print('El nombre está en la lista')
+        break
+else:
+    print('Lo siento, el nombre no está en la lista')
+
+
+•	EJERCICIO 2: Cree una función de Python llamada suma que tome 3 argumentos y devuelva la suma de los 3.
+
+def suma(a, b, c):
+    total = a + b + c
+    return total
+
+
+print(suma(3, 5, 2))
+
+
+•	EJERCICIO 3: Cree una función lambda con la misma funcionalidad que la función de suma que acaba de crear.
+
+suma_lambda = lambda a, b, c: a + b + c
+
+print(suma_lambda(2, 4, 10))
+
+
+•	EJERCICIO 4: Utilizando la siguiente lista y variable, determine si el valor de la variable coincide o no con un valor de la lista. 
+*Sugerencia, si es necesario, utilice un bucle for in y el operador in.
+
+nombre = 'Sara'
+lista_nombres = 'Jessica', 'Paul', 'George', 'Henry', 'Adán'
+
+# Utilizando operador in
+if nombre in lista_nombres:
+    print("El nombre está en la lista")
+else:
+    print("El nombre no está en la lista")
+
+
+# Utilizando bucle for in
+for persona in lista_nombres:
+    if persona == nombre:
+        print("El nombre está en la lista")
+        break
+else:
+    print("El nombre no está en la lista")
